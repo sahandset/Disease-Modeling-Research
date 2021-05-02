@@ -68,7 +68,7 @@ class SIR():
         seed     = int(rnd.randint(0,n-1)) # pick a random node is patient 0
         zt[seed] = 'I'
         t        = 1 #t is in the scale of day
-        v_dict = {1 : 0.9, 2 : 0.95} #possibility of S -> V
+        v_dict = {1 : 0.85, 2 : 0.9} #possibility of S -> V
 
         print(f'time step {t}')
         self.drawGz(G,zt, t)
